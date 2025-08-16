@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Free Online Image & PDF Tools – Compress, Resize & Convert</title>
+<meta name="description" content="Free online tools to compress, resize images and convert PDFs. SEO optimized and AdSense ready.">
+<meta name="robots" content="index,follow">
+<link rel="canonical" href="https://www.example.com/">
+
+<!-- Open Graph -->
+<meta property="og:type" content="website">
+<meta property="og:title" content="Free Online Image & PDF Tools">
+<meta property="og:description" content="Compress, resize, convert images and PDFs easily. Fast, free, and SEO friendly.">
+<meta property="og:image" content="https://www.example.com/og-image.jpg">
+<meta name="twitter:card" content="summary_large_image">
+
+<!-- TailwindCSS -->
+<script src="https://cdn.tailwindcss.com"></script>
+
+<style>
+* { outline-color: #2563eb; }
+html { scroll-behavior: smooth; }
+.ad-slot { background: repeating-linear-gradient(45deg,#f8fafc,#f8fafc 10px,#f1f5f9 10px,#f1f5f9 20px); }
+section { scroll-margin-top: 80px; }
+</style>
+</head>
+<body class="bg-slate-50 text-slate-800">
+
+<!-- Header -->
+<header class="sticky top-0 z-40 backdrop-blur bg-white/80 border-b border-slate-200">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="flex items-center justify-between h-16">
+      <a href="#home" class="flex items-center gap-2 font-semibold text-lg"><span class="text-blue-600">▦</span> Tools</a>
+      <nav class="hidden md:flex items-center gap-6 text-sm">
+        <a href="#home" class="hover:text-blue-600 font-bold">Home</a>
+        <a href="#compressor" class="hover:text-blue-600">Compressor</a>
+        <a href="#resizer" class="hover:text-blue-600">Resizer</a>
+        <a href="#pdf" class="hover:text-blue-600">PDF Converter</a>
+        <a href="#faq" class="hover:text-blue-600">FAQ</a>
+        <a href="#privacy" class="hover:text-blue-600">Privacy</a>
+      </nav>
+    </div>
+  </div>
+</header>
+
+<!-- Home Section -->
+<section id="home" class="bg-gradient-to-r from-blue-500 to-cyan-500 text-white py-20">
+  <div class="max-w-5xl mx-auto px-6 text-center">
+    <h1 class="text-4xl md:text-6xl font-extrabold leading-tight">All-in-One <span class="text-yellow-300">Image & PDF Tools</span></h1>
+    <p class="mt-4 text-lg md:text-xl max-w-2xl mx-auto">Compress, resize, convert and optimize your images and PDFs for free. Fast, SEO-friendly and 100% safe – everything happens in your browser.</p>
+    <div class="mt-8 flex flex-wrap justify-center gap-4">
+      <a href="#compressor" class="px-6 py-3 rounded-2xl bg-white text-blue-600 font-semibold shadow hover:bg-slate-100">Start Compressing</a>
+      <a href="#resizer" class="px-6 py-3 rounded-2xl bg-yellow-300 text-blue-900 font-semibold shadow hover:bg-yellow-200">Resize Images</a>
+      <a href="#pdf" class="px-6 py-3 rounded-2xl bg-green-600 text-white font-semibold shadow hover:bg-green-500">PDF Converter</a>
+    </div>
+  </div>
+</section>
+
+<!-- Features -->
+<section class="max-w-6xl mx-auto px-6 py-16 grid md:grid-cols-4 gap-8">
+  <div class="bg-white p-6 rounded-2xl shadow hover:shadow-lg transition">
+    <h3 class="font-bold text-xl mb-3">🔻 Compress Images</h3>
+    <p class="text-slate-600">Reduce image size without quality loss. Choose compression levels and download optimized results instantly.</p>
+  </div>
+  <div class="bg-white p-6 rounded-2xl shadow hover:shadow-lg transition">
+    <h3 class="font-bold text-xl mb-3">📏 Resize Images</h3>
+    <p class="text-slate-600">Resize by percentage or exact dimensions with aspect ratio lock. Perfect for websites, social media and more.</p>
+  </div>
+  <div class="bg-white p-6 rounded-2xl shadow hover:shadow-lg transition">
+    <h3 class="font-bold text-xl mb-3">📄 Convert & Export</h3>
+    <p class="text-slate-600">Convert between JPG, PNG, WebP and export multiple files as ZIP. 100% safe – done in your browser.</p>
+  </div>
+  <div class="bg-white p-6 rounded-2xl shadow hover:shadow-lg transition">
+    <h3 class="font-bold text-xl mb-3">📕 PDF Tools</h3>
+    <p class="text-slate-600">Convert Word to PDF, PDF to Word, merge and split PDFs directly in your browser.</p>
+  </div>
+</section>
+
+<!-- Compressor Section -->
+<section id="compressor" class="max-w-3xl mx-auto px-6 py-12 bg-white rounded-2xl shadow-lg my-12">
+  <h2 class="text-3xl font-bold mb-6 text-center">Image Compressor</h2>
+  <div class="flex flex-col gap-6">
+    <input type="file" id="imageInput" accept="image/*" class="border rounded-lg p-2">
+    <div class="flex flex-col">
+      <label for="qualityInput" class="font-semibold mb-2">Compression Level: <span id="qualityText">80%</span></label>
+      <input type="range" id="qualityInput" min="10" max="100" value="80" class="w-full">
+    </div>
+    <button id="processBtn" class="px-6 py-3 bg-red-600 text-white font-semibold rounded-2xl shadow hover:bg-red-500 transition">Compress Image</button>
+    <a id="downloadBtn" href="#" download="compressed-image.jpg" class="hidden px-6 py-3 bg-green-600 text-white font-semibold rounded-2xl shadow hover:bg-green-500 transition text-center">Download Image</a>
+  </div>
+</section>
+
+<!-- Resizer Section -->
+<section id="resizer" class="max-w-3xl mx-auto px-6 py-12 bg-white rounded-2xl shadow-lg my-12">
+  <h2 class="text-3xl font-bold mb-6 text-center">Image Resizer</h2>
+  <div class="flex flex-col gap-6">
+    <input type="file" id="resizeInput" accept="image/*" class="border rounded-lg p-2">
+    <div class="flex flex-col">
+      <label for="resizePercent" class="font-semibold mb-2">Resize Percentage: <span id="percentText">100%</span></label>
+      <input type="range" id="resizePercent" min="10" max="200" value="100" class="w-full">
+    </div>
+    <button id="resizeBtn" class="px-6 py-3 bg-red-600 text-white font-semibold rounded-2xl shadow hover:bg-red-500 transition">Resize Image</button>
+    <a id="resizeDownload" href="#" download="resized-image.jpg" class="hidden px-6 py-3 bg-green-600 text-white font-semibold rounded-2xl shadow hover:bg-green-500 transition text-center">Download Image</a>
+  </div>
+</section>
+
+<!-- PDF Converter Section -->
+<section id="pdf" class="max-w-3xl mx-auto px-6 py-12 bg-white rounded-2xl shadow-lg my-12">
+  <h2 class="text-3xl font-bold mb-6 text-center">PDF Converter</h2>
+  <div class="flex flex-col gap-6">
+    <input type="file" id="pdfInput" accept=".pdf,.docx,.doc" class="border rounded-lg p-2">
+    <select id="pdfAction" class="border rounded-lg p-2">
+      <option value="word2pdf">Word to PDF</option>
+      <option value="pdf2word">PDF to Word</option>
+    </select>
+    <button id="pdfConvertBtn" class="px-6 py-3 bg-red-600 text-white font-semibold rounded-2xl shadow hover:bg-red-500 transition">Convert</button>
+    <a id="pdfDownload" href="#" download="" class="hidden px-6 py-3 bg-green-600 text-white font-semibold rounded-2xl shadow hover:bg-green-500 transition text-center">Download</a>
+  </div>
+</section>
+
+<!-- Ad Slot -->
+<section class="max-w-5xl mx-auto px-6 py-8">
+  <div class="ad-slot rounded-2xl border border-slate-200 p-6 text-center min-h-[180px]">
+    <div class="text-xs uppercase tracking-wide text-slate-500">Ad</div>
+    <div class="font-semibold">Responsive Ad Slot</div>
+    <div class="text-slate-500 text-sm">(Insert AdSense code here)</div>
+  </div>
+</section>
+
+<!-- Footer -->
+<footer class="bg-white border-t border-slate-200">
+  <div class="max-w-7xl mx-auto px-6 py-10 grid md:grid-cols-4 gap-6 text-sm">
+    <div>
+      <div class="font-semibold">Tools</div>
+      <p class="mt-2 text-slate-600">Free, browser-based tools to optimize your images and PDFs safely.</p>
+    </div>
+    <nav class="space-y-2">
+      <a href="#home" class="block hover:text-blue-600">Home</a>
+      <a href="#compressor" class="block hover:text-blue-600">Compressor</a>
+      <a href="#resizer" class="block hover:text-blue-600">Resizer</a>
+      <a href="#pdf" class="block hover:text-blue-600">PDF Converter</a>
+    </nav>
+    <nav class="space-y-2">
+      <a href="#faq" class="block hover:text-blue-600">FAQ</a>
+      <a href="#privacy" class="block hover:text-blue-600">Privacy</a>
+      <a href="#terms" class="block hover:text-blue-600">Terms</a>
+    </nav>
+    <div class="space-y-2">
+      <div class="font-semibold">Contact</div>
+      <p class="text-slate-600">hello@example.com</p>
+    </div>
+  </div>
+  <div class="text-center text-xs text-slate-500 py-4">© <span id="year"></span> Tools. All rights reserved.</div>
+</footer>
+
+<!-- Libraries -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/pdf-lib/1.17.1/pdf-lib.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mammoth/1.4.12/mammoth.browser.min.js"></script>
+
+<script>
+// Footer Year
+document.getElementById('year').textContent = new Date().getFullYear();
+
+// Image Compressor
+const qualityInput = document.getElementById('qualityInput');
+const qualityText = document.getElementById('qualityText');
+qualityInput.addEventListener('input', () => qualityText.textContent = qualityInput.value + '%');
+
+const processBtn = document.getElementById('processBtn');
+const imageInput = document.getElementById('imageInput');
+const downloadBtn = document.getElementById('downloadBtn');
+processBtn.addEventListener('click', () => {
+  if (!imageInput.files[0]) { alert('Select image'); return; }
+  const file = imageInput.files[0];
+  const reader = new FileReader();
+  reader.onload = e => {
+    const img = new Image();
+    img.onload = () => {
+      const canvas = document.createElement('canvas');
+      canvas.width = img.width; canvas.height = img.height;
+      canvas.getContext('2d').drawImage(img, 0, 0);
+      downloadBtn.href = canvas.toDataURL('image/jpeg', qualityInput.value / 100);
+      downloadBtn.classList.remove('hidden');
+    }
+    img.src = e.target.result;
+  }
+  reader.readAsDataURL(file);
+});
+
+// Image Resizer
+const resizeInput = document.getElementById('resizeInput');
+const resizePercent = document.getElementById('resizePercent');
+const percentText = document.getElementById('percentText');
+const resizeBtn = document.getElementById('resizeBtn');
+const resizeDownload = document.getElementById('resizeDownload');
+
+resizePercent.addEventListener('input', () => percentText.textContent = resizePercent.value + '%');
+resizeBtn.addEventListener('click', () => {
+  if (!resizeInput.files[0]) { alert('Select image'); return; }
+  const file = resizeInput.files[0];
+  const reader = new FileReader();
+  reader.onload = e => {
+    const img = new Image();
+    img.onload = () => {
+      const scale = resizePercent.value / 100;
+      const canvas = document.createElement('canvas');
+      canvas.width = img.width * scale; canvas.height = img.height * scale;
+      canvas.getContext('2d').drawImage(img, 0, 0, canvas.width, canvas.height);
+      resizeDownload.href = canvas.toDataURL('image/jpeg', 1);
+      resizeDownload.classList.remove('hidden');
+    }
+    img.src = e.target.result;
+  }
+  reader.readAsDataURL(file);
+});
+
+// PDF Converter
+const pdfInput = document.getElementById('pdfInput');
+const pdfAction = document.getElementById('pdfAction');
+const pdfConvertBtn = document.getElementById('pdfConvertBtn');
+const pdfDownload = document.getElementById('pdfDownload');
+
+pdfConvertBtn.addEventListener('click', async () => {
+  if (!pdfInput.files[0]) { alert('Select a file'); return; }
+  const file = pdfInput.files[0];
+
+  if (pdfAction.value === 'word2pdf') {
+    if (!file.name.match(/\.(doc|docx)$/i)) { alert('Select a Word document'); return; }
+    const reader = new FileReader();
+    reader.onload = async e => {
+      const arrayBuffer = e.target.result;
+      const { value: htmlText } = await mammoth.convertToHtml({ arrayBuffer });
+      const { PDFDocument, rgb } = PDFLib;
+      const pdfDoc = await PDFDocument.create();
+      const page = pdfDoc.addPage();
+      page.drawText(htmlText.replace(/<[^>]+>/g, ''), { x: 50, y: 700, size: 12, color: rgb(0, 0, 0) });
+      const pdfBytes = await pdfDoc.save();
+      const blob = new Blob([pdfBytes], { type: 'application/pdf' });
+      pdfDownload.href = URL.createObjectURL(blob);
+      pdfDownload.download = file.name.replace(/\.(doc|docx)$/i, '.pdf');
+      pdfDownload.classList.remove('hidden');
+    }
+    reader.readAsArrayBuffer(file);
+  } else if (pdfAction.value === 'pdf2word') {
+    if (!file.name.match(/\.pdf$/i)) { alert('Select a PDF file'); return; }
+    const reader = new FileReader();
+    reader.onload = async e => {
+      const arrayBuffer = e.target.result;
+      const pdfDoc = await PDFLib.PDFDocument.load(arrayBuffer);
+      const pages = pdfDoc.getPages();
+      let text = '';
+      pages.forEach(p => { text += p.getTextContent ? p.getTextContent() : ''; });
+      const blob = new Blob([text], { type: 'application/msword' });
+      pdfDownload.href = URL.createObjectURL(blob);
+      pdfDownload.download = file.name.replace(/\.pdf$/i, '.doc');
+      pdfDownload.classList.remove('hidden');
+    }
+    reader.readAsArrayBuffer(file);
+  }
+});
+</script>
+
+</body>
+</html>
